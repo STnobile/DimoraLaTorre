@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    background-color: rgba(212, 212, 212, 0.509);
+    /* Slightly transparent black */
+}
+
+.navbar-brand {
+    color: #800020;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.nav-link,
+.nav-link1 {
+    color: #0a0a0a;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-link:hover {
+    color: #800020;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #800020;
+}
+
+.nav-link1.active {
+    font-weight: bold;
+}
+
+/* Custom styling for the navbar-toggler to make it burgundy/black */
+.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+    background-color: transparent;
+    /* Removes background color on hover */
+}
+
+/* Custom styling for dropdown items */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.active {
+    background-color: #ffffff !important;
+    /* Burgundy background color */
+    color: #800020 !important;
+    /* White text color for contrast */
+}
+
+
+
+.main-container {
+    background-image: url("https://res.cloudinary.com/dj3sy6ut7/image/upload/v1729960618/DLT/IMG_0657_dp6dtb.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0%;
+}
+
+.main-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(141, 139, 139, 0.509);
+    /* Adjust the opacity as needed */
+    z-index: 1;
+}
+
+.main-container>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+.text-container {
+    padding-left: 5%;
+    /* Adjust the padding as needed to move text left */
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #c4c4c4;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+h1 span.highlight {
+    color: #560d0d;
+}
+
+.btn-dark {
+    background-color: #2b2b2b77;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+.btn-inline {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Initial semi-transparent background */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+    /* Ensures the pseudo-element doesn't go outside the button */
+    transition: color 0.3s ease;
+}
+
+.btn-inline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    /* Inherits the main container's background */
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.btn-inline:hover::before {
+    opacity: 1;
+    /* Shows the background on hover */
+}
+
+.btn-inline:hover {
+    color: #ffffff;
+    /* Keeps the text color visible on hover */
+    background-color: transparent;
+    /* Makes the button background fully transparent */
+}
+
+@media (min-width: 992px) {
+
+    /* Targeting large screens */
+    .text-container h1 {
+        white-space: nowrap;
+        /* Prevents line breaks in <h1> */
+    }
+
+    .text-container {
+        padding-right: 300px;
+        /* Adjust the padding as needed to move text left */
+    }
+}
+
+/* Details Section */
+.details-section {
+    display: none;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+}
+
+
+.image-container {
+    border: 5px solid #560d0d;
+    /* Your desired border color and thickness */
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    /* Include border in total size */
+    overflow: hidden;
+}
+
+.image-style {
+    width: 100%;
+    max-width: 500px;
+}
+
+.content {
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 1.5rem;
+    color: #560d0d;
+    font-weight: bold;
+}
+
+.content h3 {
+    font-size: 3rem;
+    color: #333333;
+    font-weight: bold;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* -------------------------------------------------------  style images inside carousel */
+.fixed-carousel-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* Ensures consistent display of images */
+}
+
+
+/* For very small screens (like 300px wide) */
+@media (max-width: 576px) {
+    .fixed-carousel-img {
+        height: 250px;
+        /* Smaller height for small screens */
+    }
+}
+
+/* ------------------------------ Style Contact's section */
+.section {
+    color: #333333;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #800020;
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    text-align: center;
+    color: #333333;
+}
+
+#contact a {
+    color: #800020;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact svg {
+    vertical-align: middle;
+}
+
+/* Keep border for large screens */
+.contact-column {
+    border-right: 1px solid #333;
+}
+
+/* Remove the border for medium and smaller screens */
+@media (max-width: 767px) {
+    .contact-column {
+        border-right: none !important;
+    }
+}
+
+
+/* General adjustments for small screens */
+@media (max-width: 470px) {
+
+    /* Navbar logo resizing */
+    .navbar-logo {
+        height: 80px;
+        /* Reduce logo size */
+    }
+
+    /* Main text container padding adjustment */
+    .text-container {
+        padding: 20px;
+    }
+
+    /* Reduce heading sizes for smaller screens */
+    .text-container h1 {
+        font-size: 2rem;
+    }
+
+    .text-container .highlight {
+        font-size: 2.3rem;
+    }
+
+    /* Reduce button size */
+    .btn-inline {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Carousel image height adjustment */
+    .fixed-carousel-img {
+        height: 300px;
+        width: 100%;
+        /* Set a smaller height for images on small screens */
+        object-fit: cover;
+    }
+
+    /* Details section padding adjustment */
+    .details-section .p-5 {
+        padding: 10px;
+    }
+
+    /* Footer column stacking */
+    .contact-column {
+        border-right: none;
+        /* Remove border on small screens */
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    .container.mt-3 .row>div {
+        margin-bottom: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 770px) { /* Applies for medium and smaller screens */
+    .reverse-order {
+        flex-direction: column-reverse !important;
+    }
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* Center text */
+        margin: auto;
+        max-width: 90%; /* Prevent stretching */
+    }
+
+}

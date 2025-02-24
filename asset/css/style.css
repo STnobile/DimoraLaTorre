@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    margin-top: 180px;
+}
+
+.logo-margin {
+    margin-left: 30px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    color: #800020;
+    font-family: "Dancing Script", cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.nav-link {
+    color: #0a0a0a;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 8px 12px;
+}
+
+.nav-link:hover {
+    color: #800020;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    border-bottom: 2px solid #800020;
+}
+
+/* Custom styling for the navbar-toggler to make it burgundy */
+.navbar-toggler {
+    border-color: rgb(0, 0, 0);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:hover {
+    background-color: transparent;
+    /* Removes background color on hover */
+}
+
+/* Custom styling for dropdown items */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.active {
+    background-color: #ffffff !important;
+    /* Burgundy background color */
+    color: #800020 !important;
+    /* White text color for contrast */
+}
+
+
+/* Section Styling */
+.section {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Section Headings */
+#about h2,
+#gallery h2,
+#regolamento h2{
+    color: #800020;
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* About Us Text Styling */
+#about p,
+#gallery p {
+    color: #333333;
+    text-align: start;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/* Link Styling within Sections */
+.section a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* About Us Image Styling */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.custom-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Gallery Styling */
+#gallery .row {
+    justify-content: center;
+}
+
+#gallery img {
+    border-radius: 8px;
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Booking Button Styling */
+.btn-booking {
+    background-color: #800020;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-booking:hover {
+    background-color: #5a0016;
+}
+
+.button-container {
+    text-align: right;
+    margin-right: 15%;
+}
+
+/* Contact Section Styling */
+
+
+#contact h2 {
+    color: #800020;
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#contact {
+    padding: 40px;
+}
+
+#contact p {
+    text-align: center;
+    color: #333333;
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #800020;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact svg {
+    vertical-align: middle;
+}
+
+/* Keep border for large screens */
+.contact-column {
+    border-right: 1px solid #333;
+}
+
+/* Remove the border for medium and smaller screens */
+@media (max-width: 767px) {
+    .contact-column {
+        border-right: none !important;
+    }
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+#contact svg {
+    vertical-align: middle;
+}
+
+/* Keep border for large screens */
+.contact-column {
+    border-right: 1px solid #333;
+}
+
+/* Remove the border for medium and smaller screens */
+@media (max-width: 767px) {
+    .contact-column {
+        border-right: none !important;
+    }
+}
+
+/* Media query for small screens */
+@media (max-width: 480px) {
+    #contact {
+        padding: 20px;
+    }
+
+}
+
+
+/* Regolamento Section Specific Styling */
+.regolamento-container {
+    display: flex;
+    flex-direction: column;
+    /* Stack cards vertically */
+    gap: 15px;
+    /* Space between cards */
+    margin: 2rem;
+}
+
+.regolamento-card {
+    background-color: #ffffff;
+    border: 2px dashed #800020;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Full width */
+    max-width: 600px;
+    /* Constrain max width */
+    margin: 0 auto;
+    /* Center the cards */
+    text-align: center;
+}
+
+.regolamento-card .icon {
+    color: #800020;
+    width: 50px;
+    margin: 0 auto 10px;
+}
+
+.regolamento-card h5 {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.2rem;
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.regolamento-card hr {
+    border: none;
+    border-top: 2px solid #800020;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.regolamento-card p {
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.regolamento-card p strong {
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Custom Styling for the Images */
+.custom-img {
+    width: 100%;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+
+@media (min-width: 768px) {
+    .regolamento-container {
+        flex-direction: column;
+        /* Still vertical on larger screens */
+    }
+}
+
+
+/* --------------------------------------------------------------------  welcome message  */
+
+/* Overlay shade */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.693);/* background shadow*/
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.welcome-message {
+    position: relative;
+    top: 30%;
+    width: 30%;
+    z-index: 2;
+    background-color: #5a0016;
+    background-size: contain;
+    background-position: center;
+    padding: 20px 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+/* Heading style - Use dark text for better contrast */
+.welcome-message h1 {
+    font-size: 26px;
+    color: #fff; /* White, but on dark background */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Soft shadow for better visibility */
+    margin-bottom: 10px;
+    font-family: "Dancing Script", cursive;
+}
+
+/* Subheading */
+.welcome-message h2 {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    font-family: "Dancing Script", cursive;
+}
+.enter-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.enter-btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+}
