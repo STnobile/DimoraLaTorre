@@ -35,5 +35,8 @@
         "vasta",
         "visitare",
         "zona"
-    ]
+    ],
+    "yaml.schemas": {
+        "https://gitpod.io/schemas/gitpod-schema.json": "file:///workspace/DimoraLaTorre/.gitpod.yml"
+    }
 }
