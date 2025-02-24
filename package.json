@@ -2,6 +2,7 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
-    "cloudinary": "^2.5.1"
+    "cloudinary": "^2.5.1",
+    "dotenv": "^16.4.7"
   }
 }
