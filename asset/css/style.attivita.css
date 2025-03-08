@@ -19,6 +19,11 @@ body {
     justify-content: space-between;
 }
 
+.logo-margin {
+    margin-left: 5px;
+    height: 90px;
+}
+
 .navbar-brand {
     color: #800020;
     font-family: "Dancing Script", cursive;

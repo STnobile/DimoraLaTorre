@@ -21,6 +21,11 @@ body {
     /* Slightly transparent black */
 }
 
+.logo-margin {
+    margin-left: 5px;
+    height: 90px;
+}
+
 .navbar-brand {
     color: #800020;
     font-family: "Dancing Script", cursive;
