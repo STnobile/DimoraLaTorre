@@ -10,8 +10,8 @@ body {
 }
 
 .logo-margin {
-    margin-left: 20px;
-    height: 100px;
+    margin-left: 5px;
+    height: 90px;
 }
 
 /* Navbar Styling */
@@ -361,4 +361,22 @@ body {
 .enter-btn:hover {
     background-color: rgba(255, 255, 255, 1);
     transform: scale(1.05);
+}
+
+/* For medium screens (tablets) */
+@media screen and (max-width: 768px) {
+    .welcome-message {
+        width: 80%;
+        padding: 15px 30px;
+        top: 25%;
+    }
+}
+
+/* For small screens (phones) */
+@media screen and (max-width: 480px) {
+    .welcome-message {
+        width: 90%;
+        padding: 12px 20px;
+        top: 20%;
+    }
 }
