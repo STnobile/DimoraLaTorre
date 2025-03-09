@@ -355,7 +355,7 @@ h1 span.highlight {
     .contact-column {
         border-right: none;
         /* Remove border on small screens */
-        border-bottom: 1px solid #ccc;
+        /* border-bottom: 1px solid #ccc; */
         padding-bottom: 10px;
         margin-bottom: 10px;
     }
