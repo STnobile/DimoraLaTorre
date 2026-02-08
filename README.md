@@ -27,9 +27,16 @@ This website serves as a promotional landing page for a rental property in Sicil
 - GitHub Pages for hosting
 
 ## 🚀 Features
-- Landing page with clear visual hierarchy  
-- Navigation to specific sections (activities, rules, rooms)  
-- Call-to-Action buttons linking to external booking services  
-- Property details and contact info  
-- Simple JavaScript interactions for smoother UX
+- Hero welcome section with logo and navigation  
+- Property introduction and description  
+- Booking call-to-action linking to **Booking.com**  
+- Navigation sections for:
+  - Dimora solutions (property options)
+  - House rules
+  - Pachino & surroundings  
+- Contact section with:
+  - Property address
+  - Email
+  - WhatsApp link
+  - Instagram link
 
